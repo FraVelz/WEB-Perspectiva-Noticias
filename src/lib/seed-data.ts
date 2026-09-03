@@ -25,8 +25,7 @@ El desenlace de esta semana no solo define el texto de las reformas. Define, sob
     section: "politica",
     authorName: "Camila Rodríguez",
     authorTitle: "Redacción Política",
-    coverImage:
-      "https://images.unsplash.com/photo-1555881400-74d7d8d321b7?auto=format&fit=crop&w=1800&q=80",
+    coverImage: "/press/plaza-bolivar.jpg",
     coverCaption: "Plaza histórica y edificios de gobierno, referencia visual de la jornada legislativa.",
     status: "published",
     featured: true,
@@ -50,8 +49,7 @@ La pregunta para octubre no es si el dólar va a moverse. Es cuánto de esa vola
     section: "economia",
     authorName: "Andrés Molina",
     authorTitle: "Redacción Economía",
-    coverImage:
-      "https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&w=1400&q=80",
+    coverImage: "/press/dolar-prensa.jpg",
     coverCaption: "Billetes de dólar como símbolo de la presión cambiaria sobre la TRM.",
     status: "published",
     featured: false,
@@ -75,8 +73,7 @@ Si el plan no llega completo, el tribunal dejó abierta la puerta a un seguimien
     section: "politica",
     authorName: "Helena Vargas",
     authorTitle: "Redacción Justicia",
-    coverImage:
-      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1400&q=80",
+    coverImage: "/press/mazo-prensa.jpg",
     coverCaption: "Mazo y códigos: la Corte exige un plan de salud con indicadores públicos.",
     status: "published",
     featured: false,
@@ -100,8 +97,7 @@ El piloto durará seis meses. Al final, el Gobierno tendrá que elegir entre tra
     section: "investigacion",
     authorName: "Mateo Rincón",
     authorTitle: "Unidad de Datos",
-    coverImage:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=80",
+    coverImage: "/press/capitolio-nacional.jpg",
     coverCaption: "El piloto de IA en contratación pública reabre el debate sobre auditoría algorítmica.",
     status: "published",
     featured: false,
@@ -125,8 +121,7 @@ La clave del segundo semestre está en la inversión privada. Sin esa palanca, e
     section: "economia",
     authorName: "Laura Castaño",
     authorTitle: "Redacción Economía",
-    coverImage:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80",
+    coverImage: "/press/bogota-noche.jpg",
     coverCaption: "Skyline nocturno: el dato de crecimiento no alcanza aún a revertir la debilidad de la inversión.",
     status: "published",
     featured: false,
@@ -150,8 +145,7 @@ Si la mesa sobrevive a su segunda reunión, el semestre puede recuperarse. Si no
     section: "politica",
     authorName: "Julián Pardo",
     authorTitle: "Redacción Congreso",
-    coverImage:
-      "https://images.unsplash.com/photo-1529101091768-41b5b4b813a0?auto=format&fit=crop&w=1400&q=80",
+    coverImage: "/press/capitolio-nacional.jpg",
     coverCaption: "El Congreso busca una tregua de procedimiento para destrabar la agenda.",
     status: "published",
     featured: false,
@@ -175,8 +169,7 @@ Colombia no puede resolver sola una ruta que atraviesa media región. Tampoco pu
     section: "mundo",
     authorName: "Sofía Beltrán",
     authorTitle: "Corresponsalía Internacional",
-    coverImage:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+    coverImage: "/press/caribe-prensa.jpg",
     coverCaption: "El Caribe vuelve al centro de la agenda diplomática por las rutas migratorias.",
     status: "published",
     featured: false,

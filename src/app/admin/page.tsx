@@ -40,8 +40,11 @@ export default function AdminHomePage() {
         </div>
       </dl>
       <div className="mt-8 flex gap-4 text-sm">
-        <Link className="border border-ink bg-ink px-4 py-2 text-paper" href="/admin/articulos/nuevo">
-          Nueva pieza
+        <Link
+          className="bg-[#efe7d6] px-4 py-2 font-[family-name:var(--font-sans)] text-[11px] uppercase tracking-[0.16em] text-[#121212]"
+          href="/admin/articulos/nuevo"
+        >
+          Nuevo artículo
         </Link>
         <Link className="border border-ink px-4 py-2" href="/">
           Ver periódico

@@ -1,14 +1,10 @@
-import { Masthead } from "@/components/masthead";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteNav } from "@/components/site-nav";
+import { EditionShell } from "@/components/edition-shell";
 
 export const metadata = { title: "Suscríbete" };
 
 export default function SubscribePage() {
   return (
-    <>
-      <Masthead />
-      <SiteNav />
+    <EditionShell>
       <main className="mx-auto max-w-xl px-4 py-16 text-center sm:px-6">
         <p className="font-[family-name:var(--font-sans)] text-[11px] uppercase tracking-[0.28em] text-blue">
           Edición digital
@@ -23,7 +19,6 @@ export default function SubscribePage() {
           <a href="mailto:redaccion@perspectivanoticias.co">redaccion@perspectivanoticias.co</a>
         </p>
       </main>
-      <SiteFooter />
-    </>
+    </EditionShell>
   );
 }

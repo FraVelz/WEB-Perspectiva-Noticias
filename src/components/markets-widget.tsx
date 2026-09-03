@@ -14,7 +14,9 @@ export function MarketsWidget() {
             </span>
             <span className="tabular-nums">
               {row.value}{" "}
-              <span style={{ color: row.up ? "var(--up)" : "var(--down)" }}>{row.change}</span>
+              <span style={{ color: row.up ? "var(--up)" : "var(--down)" }}>
+                {row.up ? "▲" : "▼"} {row.change}
+              </span>
             </span>
           </li>
         ))}

@@ -1,6 +1,4 @@
-import { Masthead } from "@/components/masthead";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteNav } from "@/components/site-nav";
+import { EditionShell } from "@/components/edition-shell";
 import { StoryRow } from "@/components/story-link";
 import { getPublishedArticles } from "@/lib/articles";
 
@@ -19,9 +17,7 @@ export default async function SearchPage({
     : articles.slice(0, 8);
 
   return (
-    <>
-      <Masthead />
-      <SiteNav />
+    <EditionShell ticker={articles.filter((a) => a.breaking)}>
       <main className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
         <h1 className="font-[family-name:var(--font-display)] text-4xl">Buscar</h1>
         <form className="mt-6">
@@ -38,7 +34,6 @@ export default async function SearchPage({
           ))}
         </div>
       </main>
-      <SiteFooter />
-    </>
+    </EditionShell>
   );
 }

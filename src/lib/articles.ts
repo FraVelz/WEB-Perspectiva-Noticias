@@ -103,5 +103,7 @@ export function pickHomeLayout(articles: Article[]) {
     rest: rest.slice(3),
     breaking: articles.filter((a) => a.breaking),
     opinion: articles.filter((a) => a.section === "opinion"),
+    mundo: rest.filter((a) => a.section === "mundo"),
+    cultura: rest.filter((a) => a.section === "cultura"),
   };
 }

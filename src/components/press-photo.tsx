@@ -6,16 +6,19 @@ export function PressPhoto({
   caption,
   priority = false,
   className = "",
+  ratio = "16/9",
 }: {
   src: string;
   alt: string;
   caption?: string;
   priority?: boolean;
   className?: string;
+  ratio?: "16/9" | "4/3" | "1/1";
 }) {
+  const aspect = ratio === "4/3" ? "aspect-[4/3]" : ratio === "1/1" ? "aspect-square" : "aspect-[16/9]";
   return (
     <figure className={className}>
-      <div className="relative aspect-[16/9] overflow-hidden bg-paper-2">
+      <div className={`relative overflow-hidden bg-paper-2 ${aspect}`}>
         <Image
           src={src}
           alt={alt}

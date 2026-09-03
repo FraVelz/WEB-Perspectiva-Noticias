@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation";
-import { Masthead } from "@/components/masthead";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteNav } from "@/components/site-nav";
+import { EditionShell } from "@/components/edition-shell";
 import { StoryRow } from "@/components/story-link";
-import { getArticlesBySection } from "@/lib/articles";
+import { getArticlesBySection, getPublishedArticles } from "@/lib/articles";
 import { sectionBySlug } from "@/lib/sections";
 import type { SectionSlug } from "@/lib/types";
 
@@ -19,24 +17,24 @@ export default async function SectionPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const section = sectionBySlug(slug);
   if (!section) notFound();
-  const articles = await getArticlesBySection(slug as SectionSlug);
+  const [articles, all] = await Promise.all([
+    getArticlesBySection(slug as SectionSlug),
+    getPublishedArticles(),
+  ]);
 
   return (
-    <>
-      <Masthead />
-      <SiteNav current={section.slug} />
+    <EditionShell current={section.slug} ticker={all.filter((a) => a.breaking)}>
       <main className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
         <p className="font-[family-name:var(--font-sans)] text-[11px] uppercase tracking-[0.28em] text-blue">
           Sección
         </p>
-        <h1 className="mt-2 font-[family-name:var(--font-display)] text-5xl">{section.label}</h1>
+        <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl sm:text-5xl">{section.label}</h1>
         <div className="mt-8">
           {articles.map((article) => (
             <StoryRow key={article.id} article={article} />
           ))}
         </div>
       </main>
-      <SiteFooter />
-    </>
+    </EditionShell>
   );
 }
