@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f4f0e6;
+  --paper-2: #ebe6d8;
+  --ink: #121212;
+  --muted: #5c574c;
+  --rule: #1a1a1a;
+  --rule-soft: rgba(18, 18, 18, 0.18);
+  --blue: #0b4f9c;
+  --breaking: #b42318;
+  --up: #1f7a3f;
+  --down: #b42318;
+}
+
+html.ink {
+  --paper: #0e0e10;
+  --paper-2: #161618;
+  --ink: #f3efe6;
+  --muted: #b7b1a4;
+  --rule: #e8e2d4;
+  --rule-soft: rgba(243, 239, 230, 0.16);
+  --blue: #4f8fd6;
+  --breaking: #e23d32;
+  --up: #6ecf8b;
+  --down: #e23d32;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-blue: var(--blue);
+  --color-breaking: var(--breaking);
+  --font-serif: var(--font-source-serif);
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-inter);
+  --font-cond: var(--font-oswald);
+}
+
+* {
+  border-color: var(--rule-soft);
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-serif), "Times New Roman", serif;
+  text-rendering: optimizeLegibility;
+}
+
+a:hover {
+  color: var(--blue);
+}
+
+.hairline {
+  border-top: 1px solid var(--rule);
+}
+
+.hairline-double {
+  border-top: 3px solid var(--rule);
+  box-shadow: 0 3px 0 var(--paper), 0 4px 0 var(--rule);
+}
+
+.drop-cap::first-letter {
+  float: left;
+  font-family: var(--font-display), serif;
+  font-size: 4.6rem;
+  line-height: 0.8;
+  padding: 0.12em 0.12em 0 0;
+  font-weight: 700;
+}
+
+.photo-press {
+  filter: grayscale(1) contrast(1.08);
+}
+
+html.ink .photo-press {
+  filter: grayscale(1) contrast(1.12) brightness(0.92);
+}
+
+.e-mark {
+  position: relative;
+  display: inline-block;
+}
+
+.e-mark::after {
+  content: "";
+  position: absolute;
+  left: 0.06em;
+  right: 0.06em;
+  top: 52%;
+  height: 0.2em;
+  background: var(--blue);
+  transform: translateY(-50%);
+}
+
+.masthead-lockup {
+  letter-spacing: 0.18em;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rule-soft);
+}
