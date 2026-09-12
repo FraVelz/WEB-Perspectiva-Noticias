@@ -17,7 +17,7 @@ export function BrandMark({
         alt=""
         width={size}
         height={size}
-        className="shrink-0 object-contain"
+        className="shrink-0 bg-transparent object-contain"
         priority
       />
       <span className="flex flex-col leading-none">
@@ -26,7 +26,7 @@ export function BrandMark({
             stacked ? "text-[1.7rem] sm:text-[2.15rem]" : "text-[1.2rem] sm:text-[1.85rem]"
           }`}
         >
-          PERSP<span className="e-mark">E</span>CTIVA
+          P<span className="e-mark">E</span>RSPECTIVA
         </span>
         <span
           className={`masthead-lockup mt-1 font-[family-name:var(--font-sans)] ${

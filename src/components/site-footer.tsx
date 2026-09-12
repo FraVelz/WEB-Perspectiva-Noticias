@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { BrandMark, Tagline } from "./brand-mark";
+import { ChannelLinks } from "./channel-links";
 import { SECTIONS } from "@/lib/sections";
 
 export function SiteFooter() {
   return (
     <footer className="mt-10 border-t-[3px] border-ink px-4 py-10 sm:px-6">
-      <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <BrandMark size={52} />
           <Tagline />
@@ -41,6 +42,12 @@ export function SiteFooter() {
               <a href="mailto:redaccion@perspectivanoticias.co">redaccion@perspectivanoticias.co</a>
             </li>
           </ul>
+        </div>
+        <div>
+          <h2 className="font-[family-name:var(--font-sans)] text-[11px] uppercase tracking-[0.22em]">
+            Canales
+          </h2>
+          <ChannelLinks />
         </div>
       </div>
       <p className="mx-auto mt-8 max-w-6xl font-[family-name:var(--font-sans)] text-[10px] uppercase tracking-[0.18em] text-muted">

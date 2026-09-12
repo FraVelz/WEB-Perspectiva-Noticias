@@ -10,9 +10,26 @@ export const revalidate = 60;
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const article = await getArticleBySlug(slug);
+  if (!article) return { title: "Artículo" };
   return {
-    title: article?.title ?? "Artículo",
-    description: article?.dek,
+    title: article.title,
+    description: article.dek,
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description: article.dek,
+      publishedTime: article.publishedAt,
+      modifiedTime: article.updatedAt,
+      authors: [article.authorName],
+      section: article.kicker,
+      locale: "es_CO",
+      siteName: "Perspectiva Noticias",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.dek,
+    },
   };
 }
 

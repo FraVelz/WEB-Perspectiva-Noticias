@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { BrandMark, Tagline } from "./brand-mark";
+import { ChannelLinks } from "./channel-links";
 import { IconClose, IconMenu, IconSearch, IconUser } from "./icons";
 import { ThemeToggle } from "./theme-toggle";
 import { WeatherChip } from "./weather-widget";
@@ -26,6 +27,9 @@ export function SiteHeader({ current }: { current?: string }) {
             <WeatherChip />
           </div>
           <div className="flex items-center gap-2 text-ink">
+            <div className="hidden lg:block">
+              <ChannelLinks variant="icons" />
+            </div>
             <Link href="/buscar" className="inline-flex items-center gap-1 px-2 py-1 hover:text-blue">
               <IconSearch />
               <span className="hidden lg:inline">Buscar</span>
@@ -89,6 +93,8 @@ export function SiteHeader({ current }: { current?: string }) {
               <Link href="/admin" onClick={() => setOpen(false)}>
                 Redacción
               </Link>
+              <p className="pt-2 text-muted">Canales</p>
+              <ChannelLinks variant="menu" onNavigate={() => setOpen(false)} />
             </div>
           </div>
         ) : null}

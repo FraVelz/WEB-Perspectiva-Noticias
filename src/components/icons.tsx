@@ -78,3 +78,35 @@ export function IconCloud({ className = "h-8 w-8" }: IconProps) {
     </svg>
   );
 }
+
+export function IconInstagram({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="17.15" cy="6.85" r="0.95" fill="currentColor" />
+    </svg>
+  );
+}
+
+export function IconTikTok({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <path
+        d="M14.2 3.5v9.1a3.7 3.7 0 1 1-3.1-3.65v2.55a1.2 1.2 0 1 0 1.2 1.2V3.5h1.9c.35 2.35 2.15 4.15 4.5 4.55v2.15c-1.7-.2-3.2-1.1-4.5-2.45"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function IconYouTube({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <rect x="2.5" y="6" width="19" height="12" rx="3.2" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M10.2 9.6v4.8l4.6-2.4-4.6-2.4z" fill="currentColor" />
+    </svg>
+  );
+}
