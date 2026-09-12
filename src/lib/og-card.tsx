@@ -3,6 +3,9 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { SITE } from "@/lib/seed-data";
 
+/* ImageResponse/Satori only accepts native <img>, not next/image. */
+/* eslint-disable @next/next/no-img-element */
+
 export const OG_SIZE = { width: 1200, height: 630 };
 export const OG_CONTENT_TYPE = "image/png";
 export const OG_ALT = "Perspectiva Noticias";
@@ -137,7 +140,7 @@ export async function renderSiteOgImage() {
             justifyContent: "center",
           }}
         >
-          <img src={lockupSrc} width={LOCKUP.width} height={LOCKUP.height} />
+          <img src={lockupSrc} alt="Perspectiva Noticias" width={LOCKUP.width} height={LOCKUP.height} />
           <div
             style={{
               display: "flex",
@@ -201,6 +204,7 @@ export async function renderArticleOgImage(article: {
           {coverSrc ? (
             <img
               src={coverSrc}
+              alt=""
               width={520}
               height={630}
               style={{ objectFit: "cover", filter: "grayscale(1) contrast(1.08)" }}
@@ -216,7 +220,7 @@ export async function renderArticleOgImage(article: {
                 background: PAPER,
               }}
             >
-              <img src={logoSrc} width={180} height={169} />
+              <img src={logoSrc} alt="" width={180} height={169} />
             </div>
           )}
         </div>
@@ -287,8 +291,8 @@ export async function renderArticleOgImage(article: {
             ) : null}
             <Hairline weight={1} />
             <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 16 }}>
-              <img src={logoSrc} width={MARK.width} height={MARK.height} />
-              <img src={wordmarkSrc} width={WORDMARK.width} height={WORDMARK.height} />
+              <img src={logoSrc} alt="" width={MARK.width} height={MARK.height} />
+              <img src={wordmarkSrc} alt="Perspectiva Noticias" width={WORDMARK.width} height={WORDMARK.height} />
             </div>
           </div>
         </div>
