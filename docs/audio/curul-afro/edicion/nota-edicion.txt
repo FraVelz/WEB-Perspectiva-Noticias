@@ -1,0 +1,48 @@
+Curul afro — edición para video corto
+=====================================
+
+Originales (no se tocaron):
+  docs/audio/curul-afro/originales/voice-message.ogg      (~1:44, take 1)
+  docs/audio/curul-afro/originales/voice-message-1.ogg    (~1:40, take 2)
+
+Se usó el take 2: mejor “nulidad”, “aval” y “Óscar Benavides”.
+
+Copia editada (~1:04):
+  curul-afro-corto.mp3  (también en ~/Downloads/curul-afro-corto.mp3)
+  curul-afro-corto.ogg
+  curul-afro-corto.wav
+
+Se dejó
+  — Lead: suspensión de Winsner Sandoval, 72.241 votos, CNE vs. Libres
+  — Demanda de nulidad, artículo 263 y “¿por qué se interpuso?”
+  — +150.000 votos de Libres y las dos curules
+  — Sandoval sin mayoría y aun así segunda curul
+  — Cierre de jurisprudencia / CNE + Óscar Benavides
+
+Se cortó (relleno o repetido)
+  — “Esta determinación judicial representa un giro determinante…”
+  — Periodo legislativo 2026-2030
+  — “Aunque el CNE garantiza los mandatos… aquella facultad”
+  — “Un voto histórico”
+  — “Según los procesos, el CNE había gestionado a favor…”
+
+Norma para próximos guiones de Reels / TikTok / Shorts
+  Máximo 140 palabras (meta: 110–130). Ritmo de locución ~1 min.
+
+Guion modelo (125 palabras), para grabar la próxima vez:
+--------------------------------
+El Consejo de Estado suspendió provisionalmente la elección de Winsner
+Sandoval en la segunda curul afro de la Cámara, con 72.241 votos, y
+frenó la decisión del CNE que había quitado ese escaño al movimiento
+Libres.
+
+El Consejo de Estado actuó por una demanda de nulidad electoral y
+halló violación del artículo 263 de la Constitución. ¿Por qué se
+demandó? Libres, que representa a las comunidades negras, logró más
+de 150.000 votos: mayoría para las dos curules afro. El CNE había ido
+a favor de Libres y, en el último momento, cambió de rumbo. Sandoval
+no tuvo esa mayoría y aun así ocupó la segunda curul.
+
+Queda por ver qué decide la jurisprudencia y qué ocurre con las
+reglas del CNE, se pronunció Óscar Benavides.
+--------------------------------
